@@ -1,0 +1,21 @@
+<div class="card">
+    <app-card-header
+        class="item"
+        icon="../assets/icons/icon-credit-card.png"
+        title="Cartão de Crédito">
+    </app-card-header>
+
+    <div class="card__content">
+        <div *ngFor="let info of infos; let isLast = last">
+            <div class="card__content-item">
+                <p>{{ info.first.left }}</p>
+                <p>{{ info.first.right }}</p>
+            </div>
+            <div class="card__content-item">
+                <p>{{ info.second.left }}</p>
+                <p>{{ info.second.right }}</p>
+            </div>
+            <div class="card__content-line" *ngIf="!isLast"></div>
+        </div>
+    </div>
+</div>
