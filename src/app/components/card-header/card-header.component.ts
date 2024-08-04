@@ -9,5 +9,5 @@ export class CardHeaderComponent {
   @Input({ required: true }) icon: string = '';
   @Input({ required: true }) title: string = '';
   @Input() value: number | undefined = undefined;
-  @Input() headerColor: string = '#e98132';
+  @Input() bgColor: string = '#e98132';
 }
