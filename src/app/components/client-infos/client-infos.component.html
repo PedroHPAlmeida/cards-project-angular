@@ -1,0 +1,17 @@
+<div class="card">
+    <app-card-header
+        icon="../assets/icons/icon-client.png"
+        title="Informações do Cliente"
+        bgColor="#32e9da">
+    </app-card-header>
+
+    <div class="card__content">
+        <div *ngFor="let info of clientInfos; let isLast = last">
+            <div class="card__content-item">
+                <p>{{ info.label }}</p>
+                <p>{{ info.value }}</p>
+            </div>
+            <div class="card__content-line" *ngIf="!isLast"></div>
+        </div>
+    </div>
+</div>
