@@ -1,0 +1,12 @@
+<div class="card">
+    <div class="card__header" [style]="{backgroundColor: headerColor}">
+        <div class="card__header-title">
+            <img class="card__header-icon" [src]="icon">
+            <h1>{{ title }}</h1>
+        </div>
+        <p *ngIf="value">{{ value | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+    </div>
+    <div class="card__content">
+
+    </div>
+</div>
