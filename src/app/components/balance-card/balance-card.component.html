@@ -1,21 +1,21 @@
-<div class="card">
+<div class="ca-c-card">
     <app-card-header
         icon="../assets/icons/icon-hand.png"
         title="Saldos Disponíveis"
         [value]="100">
     </app-card-header>
 
-    <div class="card__content">
+    <div class="ca-c-card__content">
         <div *ngFor="let balance of availableBalances">
-            <div class="card__content-item">
+            <div class="balance-card__content-item">
                 <p>{{ balance.display }}</p>
                 <p>{{ balance.value | currency: "BRL": 'symbol' : '1.2-2' }}</p>
             </div>
-            <div class="card__content-line"></div>
+            <div class="balance-card__content-line"></div>
         </div>
 
-        <div class="card__content-summary">
-            <div class="card__content-item" *ngFor="let total of summary">
+        <div class="balance-card__content-summary">
+            <div class="balance-card__content-item" *ngFor="let total of summary">
                 <p>{{ total.display | uppercase }}</p>
                 <p>{{ total.value | currency: "BRL": 'symbol' : '1.2-2' }}</p>
             </div>

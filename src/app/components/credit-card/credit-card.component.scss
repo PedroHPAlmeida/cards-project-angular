@@ -1,17 +1,4 @@
-.card {
-    border: none;
-    overflow: hidden;
-    border-radius: 5px;
-    background-color: white;
-
-    &__content {
-        padding: 15px;
-        overflow: hidden;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        background-color: white;
-    }
-
+.credit-card {
     &__content-item {
         display: flex;
         align-items: center;
