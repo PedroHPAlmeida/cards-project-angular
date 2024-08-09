@@ -7,7 +7,7 @@
 
     <div class="ca-c-card__content">
         <div *ngFor="let balance of availableBalances">
-            <div class="balance-card__content-item">
+            <div class="ca-c-card__content-item">
                 <p>{{ balance.display }}</p>
                 <p>{{ balance.value | currency: "BRL": 'symbol' : '1.2-2' }}</p>
             </div>
@@ -15,7 +15,7 @@
         </div>
 
         <div class="balance-card__content-summary">
-            <div class="balance-card__content-item" *ngFor="let total of summary">
+            <div class="ca-c-card__content-item" *ngFor="let total of summary">
                 <p>{{ total.display | uppercase }}</p>
                 <p>{{ total.value | currency: "BRL": 'symbol' : '1.2-2' }}</p>
             </div>
