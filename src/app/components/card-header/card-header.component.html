@@ -1,7 +1,0 @@
-<div class="header" [style]="{backgroundColor: bgColor}">
-    <div class="header__title">
-        <img class="header__icon" [src]="icon">
-        <h1>{{ title }}</h1>
-    </div>
-    <p *ngIf="value">{{ value | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-</div>
