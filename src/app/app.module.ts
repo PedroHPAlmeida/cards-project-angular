@@ -8,6 +8,12 @@ import { BalanceCardComponent } from './components/balance-card/balance-card.com
 import { CreditCardComponent } from './components/credit-card/credit-card.component';
 import { DebitCardComponent } from './components/debit-card/debit-card.component';
 import { ClientInfosComponent } from './components/client-infos/client-infos.component';
+import { CardComponent } from './components/card/card.component';
+import { CardHeaderDirective } from './components/card/directives/base/card-header.directive';
+import { CardContentDirective } from './components/card/directives/base/card-content.directive';
+import { CardHeaderTitleComponent } from './components/card/card-header-title/card-header-title.component';
+import { NewCardComponent } from './components/new-card/new-card.component';
+import { CardItemDirective } from './components/card/directives/item/card-item.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +22,13 @@ import { ClientInfosComponent } from './components/client-infos/client-infos.com
     BalanceCardComponent,
     CreditCardComponent,
     DebitCardComponent,
-    ClientInfosComponent
+    ClientInfosComponent,
+    CardComponent,
+    CardHeaderDirective,
+    CardContentDirective,
+    CardHeaderTitleComponent,
+    NewCardComponent,
+    CardItemDirective
   ],
   imports: [
     BrowserModule,
