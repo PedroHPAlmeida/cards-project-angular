@@ -13,6 +13,7 @@ import { CardContentDirective } from './components/card/directives/base/card-con
 import { CardHeaderTitleComponent } from './components/card/card-header-title/card-header-title.component';
 import { CardItemDirective } from './components/card/directives/item/card-item.directive';
 import { CardItemComponent } from './components/card/card-item/card-item.component';
+import { DividerDirective } from './directives/divider.directive';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { CardItemComponent } from './components/card/card-item/card-item.compone
     CardHeaderTitleComponent,
     CardItemDirective,
     CardItemComponent,
+    DividerDirective,
   ],
   imports: [
     BrowserModule,

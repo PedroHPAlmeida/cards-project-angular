@@ -1,6 +1,5 @@
 import { Directive, HostBinding, Input } from '@angular/core';
 
-// Renomear diretiva de elemente após excluir o componente CardHeader 
 @Directive({
   selector: 'app-card-header, [appCardHeader]',
   host: {
