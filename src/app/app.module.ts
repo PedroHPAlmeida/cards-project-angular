@@ -12,7 +12,6 @@ import { CardComponent } from './components/card/card.component';
 import { CardHeaderDirective } from './components/card/directives/base/card-header.directive';
 import { CardContentDirective } from './components/card/directives/base/card-content.directive';
 import { CardHeaderTitleComponent } from './components/card/card-header-title/card-header-title.component';
-import { NewCardComponent } from './components/new-card/new-card.component';
 import { CardItemDirective } from './components/card/directives/item/card-item.directive';
 import { CardItemComponent } from './components/card/card-item/card-item.component';
 
@@ -28,7 +27,6 @@ import { CardItemComponent } from './components/card/card-item/card-item.compone
     CardHeaderDirective,
     CardContentDirective,
     CardHeaderTitleComponent,
-    NewCardComponent,
     CardItemDirective,
     CardItemComponent,
   ],
