@@ -1,5 +1,6 @@
 import { Directive } from '@angular/core';
 
+// Remover
 @Directive({
   selector: '[appCardItem]',
   host: {

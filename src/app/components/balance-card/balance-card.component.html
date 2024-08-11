@@ -5,45 +5,24 @@
     </app-card-header-dir>
 
     <app-card-content>
-        <div appCardItem>
-            <p>Conta Corrente</p>
-            <p>{{ ccValue | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-        </div>
+        <app-card-item leftContent="Conta Corrente" [rightContent]="ccValue" />
         <div class="ca-c-divider"></div>
 
-        <div appCardItem>
-            <p>Conta Corrente Saldo Vinculados</p>
-            <p>{{ linkedBalanceCC | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-        </div>
+        <app-card-item leftContent="Conta Corrente Saldo Vinculados" [rightContent]="linkedBalanceCC" />
         <div class="ca-c-divider"></div>
 
-        <div appCardItem>
-            <p>Conta Poupança Saldo Vinculados</p>
-            <p>{{ linkedBalanceSA | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-        </div>
+        <app-card-item leftContent="Conta Poupança Saldo Vinculados" [rightContent]="linkedBalanceSA" />
         <div class="ca-c-divider"></div>
 
-        <div appCardItem>
-            <p>Investimentos com Baixa Automática</p>
-            <p>{{ automaticWithdrawal | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-        </div>
+        <app-card-item leftContent="Investimentos com Baixa Automática" [rightContent]="automaticWithdrawal" />
         <div class="ca-c-divider"></div>
 
-        <div appCardItem>
-            <p>Investimentos sem Baixa Automática</p>
-            <p>{{ noAutomaticWithdrawal | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-        </div>
+        <app-card-item leftContent="Investimentos sem Baixa Automática" [rightContent]="noAutomaticWithdrawal" />
         <div class="ca-c-divider"></div>
 
         <div class="balance-card__content-summary">
-            <div appCardItem>
-                <p>SALDO TOTAL</p>
-                <p>{{ totalBalance | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-            </div>
-            <div appCardItem>
-                <p>LIVRE PARA MOVIMENTAÇÃO</p>
-                <p>{{ freeMovement | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-            </div>
+            <app-card-item leftContent="SALDO TOTAL" [rightContent]="totalBalance" />
+            <app-card-item leftContent="LIVRE PARA MOVIMENTAÇÃO" [rightContent]="freeMovement" />
         </div>
     </app-card-content>
 </app-card>

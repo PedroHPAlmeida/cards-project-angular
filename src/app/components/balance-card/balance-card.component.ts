@@ -6,12 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './balance-card.component.scss'
 })
 export class BalanceCardComponent {
-  totalBalanceValue: number = 100;
-  ccValue: number = 200;
-  linkedBalanceCC: number = 300;
-  linkedBalanceSA: number = 400;
-  automaticWithdrawal: number = 500;
-  noAutomaticWithdrawal: number = 500;
-  totalBalance: number = 1000;
-  freeMovement: number = 1000;
+  totalBalanceValue = `R$ ${100},00`;
+  ccValue = `R$ ${200},00`;
+  linkedBalanceCC = `R$ ${300},00`;
+  linkedBalanceSA = `R$ ${400},00`;
+  automaticWithdrawal = `R$ ${500},00`;
+  noAutomaticWithdrawal = `R$ ${500},00`;
+  totalBalance = `R$ ${1000},00`;
+  freeMovement = `R$ ${1000},00`;
 }
