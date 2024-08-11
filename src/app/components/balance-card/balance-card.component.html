@@ -1,28 +1,28 @@
 <app-card>
     <app-card-header-dir>
         <app-card-header-title text="Saldos Disponíveis" icon="icon-hand.png" />
-        <p class="balance-card__header-value">{{ totalBalanceValue | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+        <p class="balance-card__header-value">R$ 100,00</p>
     </app-card-header-dir>
 
     <app-card-content>
-        <app-card-item leftContent="Conta Corrente" [rightContent]="ccValue" />
+        <app-card-item leftContent="Conta Corrente" rightContent="R$ 200,00" />
         <div class="ca-c-divider"></div>
 
-        <app-card-item leftContent="Conta Corrente Saldo Vinculados" [rightContent]="linkedBalanceCC" />
+        <app-card-item leftContent="Conta Corrente Saldo Vinculados" rightContent="R$ 300,00" />
         <div class="ca-c-divider"></div>
 
-        <app-card-item leftContent="Conta Poupança Saldo Vinculados" [rightContent]="linkedBalanceSA" />
+        <app-card-item leftContent="Conta Poupança Saldo Vinculados" rightContent="R$ 400,00" />
         <div class="ca-c-divider"></div>
 
-        <app-card-item leftContent="Investimentos com Baixa Automática" [rightContent]="automaticWithdrawal" />
+        <app-card-item leftContent="Investimentos com Baixa Automática" rightContent="R$ 500,00" />
         <div class="ca-c-divider"></div>
 
-        <app-card-item leftContent="Investimentos sem Baixa Automática" [rightContent]="noAutomaticWithdrawal" />
+        <app-card-item leftContent="Investimentos sem Baixa Automática" rightContent="R$ 500,00" />
         <div class="ca-c-divider"></div>
 
         <div class="balance-card__content-summary">
-            <app-card-item leftContent="SALDO TOTAL" [rightContent]="totalBalance" />
-            <app-card-item leftContent="LIVRE PARA MOVIMENTAÇÃO" [rightContent]="freeMovement" />
+            <app-card-item leftContent="SALDO TOTAL" rightContent="R$ 1000,00" />
+            <app-card-item leftContent="LIVRE PARA MOVIMENTAÇÃO" rightContent="R$ 1000,00" />
         </div>
     </app-card-content>
 </app-card>
