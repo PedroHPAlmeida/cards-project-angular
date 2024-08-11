@@ -1,20 +1,22 @@
-<div class="ca-c-card">
-    <app-card-header
-        icon="../assets/icons/icon-credit-card.png"
-        title="Cartão de Crédito">
-    </app-card-header>
+<app-card>
+    <app-card-header-dir>
+        <app-card-header-title text="Cartão de Crédito" icon="icon-credit-card.png" />
+    </app-card-header-dir>
 
-    <div class="ca-c-card__content">
-        <div *ngFor="let info of infos; let isLast = last">
-            <div class="ca-c-card__content-item">
-                <p>{{ info.first.left }}</p>
-                <p>{{ info.first.right }}</p>
-            </div>
-            <div class="ca-c-card__content-item">
-                <p>{{ info.second.left }}</p>
-                <p>{{ info.second.right }}</p>
-            </div>
-            <div class="ca-c-divider" *ngIf="!isLast"></div>
+    <app-card-content>
+        <div appCardItem>
+            <p>1234567891011 <br /> FELIPE DA SILVA FREITAS</p>
+            <p>MASTER CARD</p>
         </div>
-    </div>
-</div>
+
+        <app-card-item leftContent="Limite de Compra" rightContent="R$ 1.000,00" />
+        <div class="ca-c-divider"></div>
+
+        <app-card-item leftContent="Disponível" rightContent="R$ 1.200,00" />
+        <app-card-item leftContent="Limite de Saque" rightContent="R$ 2.000,00" />
+        <div class="ca-c-divider"></div>
+
+        <app-card-item leftContent="Disponível" rightContent="R$ 1.300,00" />
+        <app-card-item leftContent="Limite Total Utilizado" rightContent="R$ 3.000,00" />
+    </app-card-content>
+</app-card>
