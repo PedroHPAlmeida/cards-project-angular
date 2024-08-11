@@ -1,24 +1,49 @@
-<div class="ca-c-card">
-    <app-card-header
-        icon="../assets/icons/icon-hand.png"
-        title="Saldos Disponíveis"
-        [value]="100">
-    </app-card-header>
+<app-card>
+    <app-card-header-dir>
+        <app-card-header-title text="Saldos Disponíveis" icon="icon-hand.png" />
+        <p class="balance-card__header-value">{{ totalBalanceValue | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+    </app-card-header-dir>
 
-    <div class="ca-c-card__content">
-        <div *ngFor="let balance of availableBalances">
-            <div class="ca-c-card__content-item">
-                <p>{{ balance.display }}</p>
-                <p>{{ balance.value | currency: "BRL": 'symbol' : '1.2-2' }}</p>
-            </div>
-            <div class="ca-c-divider"></div>
+    <app-card-content>
+        <div appCardItem>
+            <p>Conta Corrente</p>
+            <p>{{ ccValue | currency: "BRL": 'symbol' : '1.2-2' }}</p>
         </div>
+        <div class="ca-c-divider"></div>
+
+        <div appCardItem>
+            <p>Conta Corrente Saldo Vinculados</p>
+            <p>{{ linkedBalanceCC | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+        </div>
+        <div class="ca-c-divider"></div>
+
+        <div appCardItem>
+            <p>Conta Poupança Saldo Vinculados</p>
+            <p>{{ linkedBalanceSA | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+        </div>
+        <div class="ca-c-divider"></div>
+
+        <div appCardItem>
+            <p>Investimentos com Baixa Automática</p>
+            <p>{{ automaticWithdrawal | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+        </div>
+        <div class="ca-c-divider"></div>
+
+        <div appCardItem>
+            <p>Investimentos sem Baixa Automática</p>
+            <p>{{ noAutomaticWithdrawal | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+        </div>
+        <div class="ca-c-divider"></div>
 
         <div class="balance-card__content-summary">
-            <div class="ca-c-card__content-item" *ngFor="let total of summary">
-                <p>{{ total.display | uppercase }}</p>
-                <p>{{ total.value | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+            <div appCardItem>
+                <p>SALDO TOTAL</p>
+                <p>{{ totalBalance | currency: "BRL": 'symbol' : '1.2-2' }}</p>
+            </div>
+            <div appCardItem>
+                <p>LIVRE PARA MOVIMENTAÇÃO</p>
+                <p>{{ freeMovement | currency: "BRL": 'symbol' : '1.2-2' }}</p>
             </div>
         </div>
-    </div>
-</div>
+    </app-card-content>
+</app-card>

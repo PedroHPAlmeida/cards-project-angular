@@ -6,15 +6,12 @@ import { Component } from '@angular/core';
   styleUrl: './balance-card.component.scss'
 })
 export class BalanceCardComponent {
-  availableBalances = [
-    { display: 'Conta Corrente', value: 200 },
-    { display: 'Conta Corrente Saldo Vinculados', value: 300 },
-    { display: 'Conta Poupança Saldo Vinculados', value: 400 },
-    { display: 'Investimentos com Baixa Automática', value: 500 },
-    { display: 'Investimentos sem Baixa Automática', value: 500 },
-  ];
-  summary = [
-    { display: 'Saldo Total', value: 1000 },
-    { display: 'Livre para Movimentação', value: 1000 },
-  ];
+  totalBalanceValue: number = 100;
+  ccValue: number = 200;
+  linkedBalanceCC: number = 300;
+  linkedBalanceSA: number = 400;
+  automaticWithdrawal: number = 500;
+  noAutomaticWithdrawal: number = 500;
+  totalBalance: number = 1000;
+  freeMovement: number = 1000;
 }

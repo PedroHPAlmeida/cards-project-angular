@@ -1,4 +1,9 @@
 .balance-card {
+    &__header-value {
+        margin-left: auto;
+        font-size: 20px;
+    }
+
     &__content-summary {
         margin-top: 30px;
         border-radius: 5px;
